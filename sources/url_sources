@@ -1,0 +1,16 @@
+# Sources
+
+https://www.kaggle.com/datasets/prashant111/the-simpsons-dataset?select=simpsons_episodes.csv
+=> personnages, épisodes, lieux, script
+
+https://simpsons.fandom.com/wiki/Category:Characters
+=> personnages par catégorie
+
+https://simpsons.fandom.com/wiki/Category:Locations
+=> lieux par catégorie
+
+https://www.looper.com/757803/best-simpsons-characters-of-all-time-ranked/
+=> top 50 des personnages
+
+https://www.imdb.com/title/tt0096697/episodes?season=1
+=> épisodes, notes
