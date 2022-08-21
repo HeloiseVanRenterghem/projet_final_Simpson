@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 		<script src="https://kit.fontawesome.com/d18df24e58.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Acme&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link href="http://fonts.cdnfonts.com/css/simpsonfont" rel="stylesheet">
+
+		<title>The Simpsons Project</title>
+		<link rel="icon" type="image/png" href="favicon.png" />
+
+		<style>
+
+		@font-face
+		{
+ 		font-family: "Akbar";
+		src: url("akbar.ttf");
+		}
+
+		@font-face
+		{
+ 		font-family: "Simpsonfont";
+		src: url("Simpsonfont.ttf");
+		}
+
+		body
+		{
+		font-family: 'Nunito Sans', sans-serif;
+		padding-top: 80px;
+		}
+
+		#methodo:hover
+		{
+        transform: scale(1.2);
+        }
+
+        .c4gnavlink:hover
+		{
+        text-decoration: underline;
+        }
+
+        table
+		{
+		margin-left: auto;
+		margin-right: auto;
+		width: 72%;
+		border: thick double #F5C024;
+		}
+
+		tr
+		{
+		border: 1px solid #F5C024;
+		font-size: 15px;
+		padding: 5px;
+		}
+
+		td
+		{
+		border: 1px solid #F5C024;
+		font-size: 13px;
+		padding: 5px;
+		}
+
+		th
+		{
+		border: 1px solid #F5C024;
+		padding: 5px;
+		}
+
+		th.perso
+		{
+		width: 18%;
+		}
+
+		th.nom
+		{
+		width: 18%;
+		}
+
+		th.titres
+		{
+		width: 18%;
+		}
+
+		th.resumes
+		{
+		width: 18%;
+		}
+
+
+		@keyframes pulse {
+		0% {transform: scale(0.90)}
+		70% {transform: scale(1)}
+		100% {transform: scale(0.90)}
+		}
+
+		@keyframes flash
+		{
+		0% {opacity: .4}
+		100% {opacity: 1}
+		}
+
+		.C4Gbtnfooter
+		{
+    	border: none;
+    	width: 38px;
+		}
+
+		.C4Gbtnfooter:hover
+		{
+    	transform: scale(1);
+		animation: pulse 1s infinite;
+		}
+
+		.btn-outline-info:hover
+		{
+ 		background-color: #F15A2A;
+ 		color:  white !important;
+        }
+
+        ::-webkit-input-placeholder {
+		font-style: italic;
+		font-size:  13px;
+		}
+		:-moz-placeholder {
+		font-style: italic;
+		font-size:  13px;
+		}
+		::-moz-placeholder {
+		font-style: italic;
+		font-size:  13px;
+		}
+		:-ms-input-placeholder {  
+		font-style: italic;
+		font-size:  13px;
+		}
+
+		</style>
+
+	</head>
+
+<body>
+	<header>
+    	<div class="bg-dark fixed-top">
+      		<div class="container-fluid">
+       			<div class="row">
+          			<nav class="col navbar navbar-expand-lg navbar-dark" style="background-color: #92D4F8;">
+           				<img class="navbar-brand px-3" href="../index.html" src="logonavbar.png" alt="logo-navbar" style="height:  70px" />
+						<button class="navbar-toggler" type="button" style="background-color: #F5C024" data-toggle="collapse" data-target="#navbarContent">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div id="navbarContent" class="collapse navbar-collapse">
+							<ul class="navbar-nav">
+								<li class="nav-item px-2 my-2">
+									<a class="nav-link c4gnavlink" href="../index.html" style="color: #2C5B95">Accueil
+									</a>
+								</li>
+								<li class="nav-item dropdown px-2 my-2">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; text-decoration: underline">Analyses
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="analyses_telespectateurs.html" style="color: #F5C024">La série et son public</a>
+										<a class="dropdown-item" href="analyses_personnages.html" style="color: #2C5B95">Les personnages</a>
+										<a class="dropdown-item" href="analyses_lieux.html" style="color: #F5C024">Les lieux</a>
+										<a class="dropdown-item" href="analyses_dialogues.html" style="color: #F5C024">Les dialogues</a>
+									</div>
+								</li>
+								<li class="nav-item px-2 my-2">
+									<a class="nav-link c4gnavlink" style="color: #2C5B95" href="episodes.html">Episodes
+									</a>
+								</li>
+								<li class="nav-item px-2 my-2">
+									<a class="nav-link c4gnavlink" style="color: #2C5B95" href="quiz.html">Quiz
+									</a>
+								</li>
+								<li id="methodo" class="nav-item px-4 my-2">
+									<a href="https://www.notion.so/8fb97760f4e74f17b1a17b7c4d67c666?v=e5ea7c0b7f584ceda983bbb34b9a8e76" target="_blank"><i class="fa-solid fa-question fa-2x" style="color: white"></i></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container-fluid">
+	  	<h1 class="mb-3 mt-3 px-5 mx-3 text-center" style="font-family: 'Akbar', sans-serif; font-weight:  900; font-size: 6vh; color: #F5C024; padding-top: 7vh">Les personnages</h1>
+		<p class="my-5 text-center" style="font-size: 3vh">La série regorge de personnages tous plus iconiques les uns que les autres. Découvrons-en plus sur eux !
+		</p>
+
+		<h3 class="mx-3 my-4" style="font-family: 'Simpsonfont', sans-serif; color: #F15A2A; font-size: 4.5vh;">Les personnages au coeur des storylines</h3>
+			<p class="mx-3">Nous avons analysé le nombre d'occurrences des prénoms des membres de la famille Simpson dans les titres et résumés d'épisodes.
+			</p>
+			
+			<table border="1" class="dataframe mb-4">
+			  <thead>
+			    <tr style="text-align: center;">
+			      <th class="perso">Personnage</th>
+			      <th class="nom">Nom</th>
+			      <th class="titres">Nombre d'occurrences dans les titres</th>
+			      <th class="resumes">Nombre d'occurrences dans les résumés</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr style="text-align: center;">
+			      <th><img src="homerpic.png" alt="homer" height=80></img></th>
+			      <td>Homer</td>
+			      <td>56</td>
+			      <td>407</td>
+			    </tr>
+			    <tr style="text-align: center;">
+			      <th><img src="bartpic.jpeg" alt="bart" height=80></th>
+			      <td>Bart</td>
+			      <td>48</td>
+			      <td>260</td>
+			    </tr>
+			    <tr style="text-align: center;">
+			      <th><img src="lisapic.png" alt="lisa" height=80></th>
+			      <td>Lisa</td>
+			      <td>42</td>
+			      <td>205</td>
+			    </tr>
+			    <tr style="text-align: center;">
+			      <th><img src="margepic.jpeg" alt="marge" height=80></th>
+			      <td>Marge</td>
+			      <td>23</td>
+			      <td>181</td>
+			    </tr>
+			    <tr style="text-align: center;">
+			      <th style="height: 90px;"><img src="maggiepic.png" alt="maggie" height=60></th>
+			      <td>Maggie</td>
+			      <td>3</td>
+			      <td>25</td>
+			    </tr>
+			  </tbody>
+			</table>
+
+			<p class="mx-3 mb-5">On constate que <strong>les storylines sont surtout centrées sur Homer</strong>. Bart arrive en second, suivi de près par Lisa. Marge est relativement en retrait. Maggie semble plutôt être un personnage secondaire (après tout, ce n'est qu'un bébé !).
+			</p>
+
+		<h3 class="mx-3 my-4" style="font-family: 'Simpsonfont', sans-serif; color: #F15A2A; font-size: 4.5vh;">Analyse demographique par sexe</h3>
+			<p class="mx-3">Nous avons accès à une liste de <strong>6722 personnages</strong>. Nous connaissons le sexe de 323 d'entre eux.
+			</p>
+			<img class="mb-3" src="nb_gender.png" alt="gender_repartition" style="display: block; margin-left: auto; margin-right: auto; max-width: 80%;"/>
+			<p class="mx-3 mb-5">Parmi les personnages dont on connaît le sexe, <strong>plus des trois quarts sont des hommes</strong>.
+			</p>
+
+		<h3 class="mx-3 my-4" style="font-family: 'Simpsonfont', sans-serif; color: #F15A2A; font-size: 4.5vh;">Analyse demographique par groupe d'ages</h3>
+			<p class="mx-3">Grâce à Simpsons Wiki, nous avons récupéré une liste de 3700 personnages classés par groupe d'âges : bébés, enfants, adolescents, adultes et seniors. 439 personnages appartiennent à plusieurs catégories, soit parce qu'ils apparaissent à différentes périodes de leur vie dans la série, soit parce qu'ils sont entre deux groupes d'âges.
+			</p>
+			<img class="mb-3" src="nb_age.png" alt="age_repartition" style="display: block; margin-left: auto; margin-right: auto; max-width: 80%;"/>
+			<p class="mx-3 mb-5"><strong>70% des personnages sont des adultes. Les autres groupes d'âges les plus représentés sont les enfants (15%) et les seniors (12%).</strong><br/>Les mineurs représentent environ 19% des personnages. Cela est proche de la démographie des États-Unis : selon le Census Bureau, 22% des habitants avaient moins de 18 ans en 2020.
+			</p>
+
+		<h3 class="mx-3 my-4" style="font-family: 'Simpsonfont', sans-serif; color: #F15A2A; font-size: 4.5vh;">Les personnages les plus bavards</h3>
+			<p class="mx-3">Nous avons à notre disposition <strong>le nombre de lignes de dialogue prononcées par chaque personnage</strong> (jusqu'à l'épisode 16 de la saison 26).<br/>Nous avons modélisé ces données grâce à un nuage de mots.
+			</p>
+			<img class="mb-3" src="characters_nb_lines_wc.png" alt="wc_nb_lines" style="display: block; margin-left: auto; margin-right: auto; max-width: 80%;"/>
+			<p class="mx-3 mt-4">Nous avons extrait un <strong>classement des personnages</strong> depuis un article du site Looper. Nous avons ensuite représenté le nombre de lignes de dialogue des quinze meilleurs personnages.
+			</p>
+			<img class="mb-3" src="characters_nb_lines_rank.png" alt="characters_nb_lines_rank" style="display: block; margin-left: auto; margin-right: auto; max-width: 60%;"/>
+			<p class="mx-3 mb-5">En raison de la nature hautement subjective du classement, nous ne pouvons pas nous avancer à établir des corrélations.
+			</p>
+
+		<h3 class="mx-3 my-4" style="font-family: 'Simpsonfont', sans-serif; color: #F15A2A; font-size: 4.5vh;">Les personnages du monde reel</h3>
+			<p class="mx-3">Les Simpson s'inspirent beaucoup de notre monde et n'hésitent pas à mettre en scène des personnes existant ou ayant existé.
+			</p>
+			<img class="mb-4" src="characters_real_world.png" alt="characters_real_world" style="display: block; margin-left: auto; margin-right: auto; max-width: 60%;"/>
+
+		<div class="mt-4 mx-3" style="font-size: 20px">🤓<strong> Le détail des analyses est disponible <a href="https://github.com/HeloiseVanRenterghem/projet_final_Simpson/blob/main/analyses/analyses_persos.ipynb" style="text-decoration: underline;" target="blank">ici</a>.</strong></div>
+	</div>
+
+	<footer class="bg-light text-center mt-5" style="width: 100vw">
+	  	<div class="container p-4">
+	    	<section class="">
+	    	  	<form action="">
+	    	    	<div class="row d-flex justify-content-center">
+	    	    		<div class="col-auto">
+	    	    			<p class="pt-2 my-2" style="color: #F15A2A">
+	    	    		    	<strong>Abonnez-vous à notre newsletter !</strong>
+	    	    			</p>
+	    	    		</div>
+	    	    		<div class="col-md-5 col-12">
+	    	    		  	<div class="form-outline form-white my-2">
+	    	    		    	<input type="email" class="form-control text-muted pl-2" placeholder="email@exemple.com" style="border-color: #F5C024 !important"/>
+	    	    		  	</div>
+	    	    		</div>
+	    	    		<div class="col-auto">
+	    	    		  	<button type="submit" class="btn btn-outline-info my-2 border" style="color: #F15A2A; border-color: #F15A2A !important">Je m'inscris
+	    	    		  	</button>
+	    	    		</div>
+	    	    	</div>
+	    	  	</form>
+	    	</section>
+	  	</div>
+
+	  	<div class="text-center mt-0 p-2" style="background-color: #2C5B95; color:  white; font-size: 10px">
+	    © The Simpsons Project
+	  	</div>
+	</footer>
+
+</body>
+
+</html>
